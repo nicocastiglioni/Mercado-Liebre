@@ -1,0 +1,41 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background-color: #EAC926;
+}
+main {
+    background-color: #ebebeb;
+}
+footer {
+    background-color: white;
+}
+
+.barra-busqueda {
+    background-color: #ffffff;
+    
+}
+.icono-margen{
+    margin-left: 10px;
+}
+.lupa{
+    background-color: #ffffff;
+}
+.cuerpos-de-texto{
+    font-size: 12px;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+}
+
+.descripciones {
+    font-size: 16px;
+}
+.titulares {
+    font-size: 24px;
+}
