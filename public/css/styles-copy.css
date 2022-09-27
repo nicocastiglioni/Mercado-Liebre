@@ -1,0 +1,110 @@
+
+/*
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto";
+}
+
+header {
+    background-color: #EAC926;
+}
+
+main {
+    background-color: #ebebeb;
+    
+}
+
+footer {
+    background-color: white;
+}
+
+.search-bar {
+    background-color: #ffffff;
+    color: #666;
+    margin-left: 5%;
+    border-style: solid;
+    border-color: #666;
+    border-width: 0.2px;
+}
+
+.lens {
+    background-color: #ffffff;
+    color: #666;
+    margin-left: 5%;
+    border-style: solid;
+    border-color: #666;
+    border-width: 0.2px;
+}
+
+.text {
+    font-size: 12px;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.discount {
+    font-size: 16px;
+    color:#39b54a;
+}
+
+.truck {
+    color: #39b54a;
+    border: solid #39b54a 1px;
+    border-radius: 50%;
+}
+
+.description {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #666;
+}
+.burger-menu {
+    background-color: #1259c3;
+    color: #ffffff;
+    padding: 2%;
+    border-radius: 3px;
+} 
+
+.lens {
+    color: #666;
+}
+
+.footer-icon {
+    color: #1259c3;   
+    margin-bottom: 10px;
+    font-size: 2em;    
+}
+
+.art-footer {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #666;
+}
+.footer-text {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #666;
+}
