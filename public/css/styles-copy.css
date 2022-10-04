@@ -16,10 +16,14 @@ Descuentos: 16px
 Descripciones: 16px
 */
 * {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Roboto";
+    background-color: #ebebeb;
 }
 
 header {
@@ -28,7 +32,8 @@ header {
 
 main {
     background-color: #ebebeb;
-    
+    width: 90%;
+    margin: auto;
 }
 
 footer {
@@ -59,21 +64,28 @@ footer {
 
 .price {
     font-size: 18px;
+    margin: 0;
+    width: 30%;    
 }
 
 .discount {
     font-size: 16px;
     color:#39b54a;
+    margin: 0;
+    width: 70%;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    display: none;
 }
 
 .truck {
     color: #39b54a;
     border: solid #39b54a 1px;
     border-radius: 50%;
-}
-
-.description {
-    font-size: 16px;
 }
 
 h3 {
@@ -89,6 +101,10 @@ h3 {
 
 .lens {
     color: #666;
+}
+
+.banner {
+    width: 100%;
 }
 
 .footer-icon {
@@ -107,4 +123,71 @@ h3 {
     margin-top: 0;
     margin-bottom: 0;
     color: #666;
+}
+
+.card {
+    background-color: white;    
+    padding: 0;
+}
+
+.main-article {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+article.card {
+    margin-bottom: 10px;
+}
+
+nav {
+    display: none;
+}
+
+@media (min-width: 361px) {
+    article.card {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .description {
+        display: block;
+    }
+    nav {
+        display: block;
+    }
+    .burger-menu {
+        display: none;
+    }
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.price-discount {
+    display: flex;
+}
+
+@media (min-width: 769px) {
+    article.card {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .description {
+        display: block;
+    }
+    nav {
+        display: block;
+    }
+    .burger-menu {
+        display: none;
+    }
 }
