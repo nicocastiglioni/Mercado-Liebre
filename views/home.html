@@ -7,28 +7,34 @@
         <title>MercadoLiebre</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-        <link rel="stylesheet" href="css/styles-copy.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>        
         <header>
             <div class="top-header">
-                <div class="logo">
-                    <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" width="200px">
-                </div>
-                <div class="search">
-                    <div class="search-bar">Buscar productos, marcas y más</div>
-                    <div class="lupa"><i class="fa fa-search lens"></i></div>
+                <div class="logo-search-bar">
+                    <div class="logo-div">
+                        <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" class="logo">
+                    </div>
+                    <div class="search-bar-container">
+                        <form action="/" method="get">
+                            <div class="search-bar-container">
+                                <input class="search-bar" type="search" name="search-bar" placeholder="Buscar productos, marcas y más" >
+                                <div class="lupa-container"><i class="fa fa-search lupa"></i></div>                
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <p class="text"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</p> 
             </div>          
             <nav>
-                <ul class="text">
+                <ul class="text site-nav">
                     <li><a href="#">Ofertas</a></li>
                     <li><a href="#">Tiendas Oficiales</a></li>
                     <li><a href="#">Vender</a></li>
                     <li><a href="#">Ayuda</a></li>
                 </ul>
-                <ul class="text">
+                <ul class="text log-nav">
                     <li><a href="register">Creá tu cuenta<i class="fa-regular fa-id-card"></i></a></li>                
                     <li><a href="login">Ingresá<i class="fa-solid fa-right-to-bracket"></i></a></li>
                     <li><a href="#">Mis compras<i class="fa-solid fa-basket-shopping"></i></a></li>
@@ -42,58 +48,58 @@
             </section>
         </header>
         <main>
+            <section class="products">
+            <h3>Basado en tu última visita</h3>
             <div class="last-visit">
-                <h3>Basado en tu última visita</h3>
-                <section class="products">
-                    <article class="card">
-                        <img src="images/img-cafetera-moulinex.jpg" alt="img-cafetera" width="200px">
-                        <div class="main-article">
-                            <i class="fa-solid fa-truck truck"></i>
-                            <div class="price-discount">
-                                <p class="price">$6.770</p>
-                                <p class="discount">40% off</p>
-                            </div>
-                            <p class="description">Cafetera Moulinex</p>
+                <article class="card">
+                    <img src="images/img-cafetera-moulinex.jpg" alt="img-cafetera">
+                    <div class="main-article">
+                        <i class="fa-solid fa-truck truck"></i>
+                        <div class="price-discount">
+                            <p class="price">$6.770</p>
+                            <p class="discount">40% off</p>
                         </div>
-                    </article>
-                    <article class="card">
-                        <img src="images/img-macbook-pro-2019.jpg" alt="img-macbook" width="200px">
-                        <div class="main-article">
-                            <i class="fa-solid fa-truck truck"></i>
-                            <div class="price-discount">
-                                <p class="price">$230.000</p>
-                                <p class="discount">20% off</p>
-                            </div>
-                            <p class="description">MacBook Pro 2019</p>
+                        <p class="description">Cafetera Moulinex</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/img-macbook-pro-2019.jpg" alt="img-macbook" width="200px">
+                    <div class="main-article">
+                        <i class="fa-solid fa-truck truck"></i>
+                        <div class="price-discount">
+                            <p class="price">$230.000</p>
+                            <p class="discount">20% off</p>
                         </div>
+                        <p class="description">MacBook Pro 2019</p>
+                    </div>
                     </article>
-                    <article class="card">
-                        <img src="images/img-samsung-galaxy-s10.jpg" alt="img-galaxy-s10" width="200px">
-                        <div class="main-article">
-                            <i class="fa-solid fa-truck truck"></i>
-                            <div class="price-discount">
-                                <p class="price">$70.500</p>
-                                <p class="discount">10% off</p>
-                            </div>
-                            <p class="description">Samsung Galaxy S10</p>
+                <article class="card">
+                    <img src="images/img-samsung-galaxy-s10.jpg" alt="img-galaxy-s10" width="200px">
+                    <div class="main-article">
+                        <i class="fa-solid fa-truck truck"></i>
+                        <div class="price-discount">
+                            <p class="price">$70.500</p>
+                            <p class="discount">10% off</p>
                         </div>
-                    </article>
-                    <article class="card">
-                        <img src="images/img-tv-samsung-smart.jpg" alt="img-tv-smart" width="200px">
-                        <div class="main-article">
-                            <i class="fa-solid fa-truck truck"></i>
-                            <div class="price-discount">
-                                <p class="price">$23.200</p>
-                                <p class="discount">5% off</p>
-                            </div>
-                            <p class="description">SmartTv Samsung 43"</p>
+                        <p class="description">Samsung Galaxy S10</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/img-tv-samsung-smart.jpg" alt="img-tv-smart" width="200px">
+                    <div class="main-article">
+                        <i class="fa-solid fa-truck truck"></i>
+                        <div class="price-discount">
+                            <p class="price">$23.200</p>
+                            <p class="discount">5% off</p>
                         </div>
-                    </article>
-                </div>
+                        <p class="description">SmartTv Samsung 43"</p>
+                    </div>
+                </article>
+            </div>
             </section>
-            <section class="offers">
-                <h3>Ofertas</h3>
-                <div class="productos">
+            <section class="products">
+            <h3>Ofertas</h3>
+            <div class="offers">
                     <article class="card">
                         <img src="images/img-cafetera-moulinex.jpg" alt="img-cafetera" width="200px">
                         <div class="main-article">
@@ -138,7 +144,7 @@
                             <p class="description">SmartTv Samsung 43"</p>
                         </div>
                     </article>
-                </div>
+            </div>
             </section>
         </main>
         <footer>
