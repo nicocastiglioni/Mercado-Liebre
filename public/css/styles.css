@@ -22,7 +22,7 @@ Descripciones: 16px
 }
 
 body {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     background-color: #ebebeb;
     width: 100%;
 }
@@ -31,14 +31,31 @@ header {
     background-color: #EAC926;
 }
 
-main {
-    background-color: #ebebeb;
-    width: 90%;
-    margin: auto;
+.top-header {
+    display: flex;
+    flex-direction: column;
 }
 
-footer {
-    background-color: white;
+.logo-search-bar {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;    
+}
+
+.logo-div {
+    width: 50%;
+    margin-right: 25px;  
+}
+
+.search-bar-container {
+    width: 50%;
+}
+
+.search-lupa-bar-container {
+    display: flex;
+    align-items: center;
 }
 
 .search-bar {
@@ -48,6 +65,11 @@ footer {
     border-color: white;    
     padding: 5px;
     border-radius: 5px;
+    width: 100%;
+}
+
+.lupa-container {
+    align-items: center ;
 }
 
 .lupa {
@@ -58,26 +80,99 @@ footer {
     right: 20px;
 }
 
-.lupa-container {
-    align-items: center ;
-}
-
 .text {
     font-size: 12px;
 }
 
-.top-header {
-    display: flex;
-    flex-direction: column;
-}
-
 .top-header p {
     text-align: center;
-    padding: 2%;
+    padding-bottom: 1%;
+    padding-right: 25px;
+}
+
+nav {
+    display: none;
 }
 
 nav ul li {
     list-style-type: none;
+    margin: 10px;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    color: #ffffff;
+    padding: 2%;
+    border-radius: 3px;
+    margin: 10px;
+} 
+
+.banner {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+main {
+    background-color: #ebebeb;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+h3 {
+    font-size: 24px;
+    color: #666;
+    margin: 10px 0;
+}
+
+article.card {
+    margin-bottom: 10px;
+    max-width: 324px;
+}
+
+.card {
+    background-color: white;    
+    padding: 0;    
+    margin: auto;
+}
+
+.card img {
+    width: 100%;
+    max-width: 324px;
+}
+
+.main-article {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.truck {
+    color: #39b54a;
+    border: solid #39b54a 1px;
+    border-radius: 50%;
+}
+
+.price-discount {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .price {
@@ -100,29 +195,18 @@ nav ul li {
     display: none;
 }
 
-.truck {
-    color: #39b54a;
-    border: solid #39b54a 1px;
-    border-radius: 50%;
-}
-
-h3 {
-    font-size: 24px;
-    color: #666;
-}
-
-.burger-menu {
-    background-color: #1259c3;
-    color: #ffffff;
+footer {
+    background-color: #ebebeb;
+    border-top: solid #666 1px;
     padding: 2%;
-    border-radius: 3px;
-    margin: 10px;
-} 
+    width: 95%;
+    margin: auto;
+}
 
-.banner {
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
+.art-footer {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #666;
 }
 
 .footer-icon {
@@ -131,80 +215,24 @@ h3 {
     font-size: 2em;    
 }
 
-.art-footer {
-    text-align: center;
-    margin-bottom: 50px;
-    color: #666;
-}
 .footer-text {
     font-size: 12px;
-    margin-top: 0;
+    margin-top: 5px;
     margin-bottom: 0;
     color: #666;
 }
 
-.card {
-    background-color: white;    
-    padding: 0;    
-    margin: auto;
-}
-
-.card img {
-    width: 100%;
-    max-width: 324px;
-}
-
-.main-article {
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
-    position: relative;
-}
-
-article.card {
-    margin-bottom: 10px;
-    max-width: 324px;
-}
-
-nav {
-    display: none;
-}
-
-main section article i {
-    display: block;
+h4 {
     font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
 }
 
-.price-discount {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.copyrigth {
+    text-align: center;
 }
 
-.logo-search-bar {
-    display: flex;
-    flex-direction: row;
-    padding: 5%;    
-}
 
-.logo-div {
-    flex-grow: 0.5;    
-}
-
-.search-bar-container {
-    display: flex;
-    flex-grow: 0.5;
-}
-
-@media (min-width: 361px) {
+/*Antes 361 - cambio a 760*/
+@media (min-width: 760px) {
     article.card {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
@@ -214,12 +242,21 @@ main section article i {
     nav {
         display: flex; 
         justify-content: space-between;       
-    }
+    }    
     nav ul {
+        display: inline;
+    }
+    ul li i {
+        margin-left: 5px;
+    }
+    .site-log-nav {
         display: flex;
         flex-direction: row;
-        justify-content: left ;
-        flex-grow: 0.5;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .site-nav, .log-nav {
+        display: flex;
     }
     .burger-menu {
         display: none;
@@ -228,28 +265,39 @@ main section article i {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-around;        
+    }
+    .top-header {
+        flex-direction: row;
+        align-items: center;
+    }
+    .logo-search-bar {
+        flex-grow: 2;
+        padding-right: 0;
+    }
+    .logo {
+        max-width: 400px;
+    }
+    .top-header p {
+        padding-bottom: 0;
+        flex-grow: 0.33;
+    }
+    .footer-container {
+        display: flex;
+    }
+    .art-footer {
+        margin: 1%
     }
 }
 
-
-@media (min-width: 769px) {
+/*Antes 769 - cambio a 1080*/
+@media (min-width: 1080px) {
     article.card {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         margin: 10px;
     }
     .description {
         display: block;
-    }
-    nav {
-        display: flex; 
-        justify-content: space-between;       
-    }
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: left ;
-        flex-grow: 0.5;
     }
     .burger-menu {
         display: none;
@@ -259,5 +307,5 @@ main section article i {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
-    }
+    }   
 }
