@@ -29,7 +29,8 @@ header {
 
 .logo-div {
     width: 50%;
-    margin-right: 25px;  
+    margin-right: 25px; 
+    max-width: 400px; 
 }
 
 .search-bar-container {
@@ -181,7 +182,7 @@ main section article i {
 footer {
     background-color: #ebebeb;
     border-top: solid #666 1px;
-    padding: 2%;
+    padding: 6% 2%;
     width: 95%;
     margin: auto;
 }

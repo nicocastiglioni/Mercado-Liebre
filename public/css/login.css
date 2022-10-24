@@ -1,0 +1,45 @@
+
+h4 {
+    font-size: 24px;
+    margin: 10px 0px;
+    font-weight: 500;
+}
+
+.login-form-container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px 0px;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 18px;
+    border: solid #1259c3 2px;
+    border-radius: 10px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+}
+
+main form div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+main label {
+    margin: 5px
+}
+
+main input {
+    width: 80%;
+    margin: auto;
+    height: 40px;
+    border: solid 2px #666;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #666;
+}
+

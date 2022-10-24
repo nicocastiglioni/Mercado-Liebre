@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre</title>
-    <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/register.css">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300;400&display=swap">
@@ -53,64 +53,66 @@
         </div>
     </header>
     <main>
-        <form action="/" method="get">
-            <div class="register-form">
-                <h4>Registro de Usuario</h4>
-                <div class="text-type-input">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required><br> 
-                </div>
-                <div class="text-type-input">
-                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required><br> 
-                </div>
-                <div class="text-type-input">
-                    <input type="text" name="nombreusuario" id="nombreusuario" placeholder="Nombre de usuari@" required><br>
-                </div>
-                <div class="text-type-input">
-                    <input type="email" name="email" id="email" placeholder="e-mail" required><br>
-                </div>
-                <div class="password-type-input">
-                    <input type="password" name="password" id="password" placeholder="Contraseña" required> <br>
-                </div>
-                <div class="password-type-input">
-                    <input type="password" name="passwordconfirm" id="password-confirm" placeholder="Confirmar contraseña" required> <br>
-                </div>
-                <div class="text-type-input">
-                    <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required><br>
-                </div>
-                <div class="date-type-input">
-                    <h4>Fecha de nacimiento</h4>
-                    <input type="date" name="fechanacimiento" id="fechanac" placeholder="Fecha de nacimiento"required ><br>
-                </div>
-                <div class="user-profile">
-                    <h4>Perfil de usuario</h4>
-                    <div class="user-type">
-                        <input type="radio" name="perfildeusuario" value="Comprador" checked>Comprador <br>
-                        <input type="radio" name="perfildeusuario" value="Vendedor">Vendedor <br>
+        <div class="register-form-container">
+            <form action="/" method="get">
+                <div class="register-form">
+                    <h4>Registro de Usuario</h4>
+                    <div class="text-type-input">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required> 
+                    </div>
+                    <div class="text-type-input">
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required> 
+                    </div>
+                    <div class="text-type-input">
+                        <input type="text" name="nombreusuario" id="nombreusuario" placeholder="Nombre de usuari@" required>
+                    </div>
+                    <div class="text-type-input">
+                        <input type="email" name="email" id="email" placeholder="e-mail" required>
+                    </div>
+                    <div class="password-type-input">
+                        <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                    </div>
+                    <div class="password-type-input">
+                        <input type="password" name="passwordconfirm" id="password-confirm" placeholder="Confirmar contraseña" required>
+                    </div>
+                    <div class="text-type-input">
+                        <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required>
+                    </div>
+                    <div class="date-type-input">
+                        <h5>Fecha de nacimiento</h5>
+                        <input type="date" name="fechanacimiento" id="fechanac" placeholder="Fecha de nacimiento"required >
+                    </div>
+                    <div class="user-profile">
+                        <h5>Perfil de usuario</h5>
+                        <div class="user-type">
+                            <input type="radio" name="perfildeusuario" value="Comprador" checked>Comprador
+                            <input type="radio" name="perfildeusuario" value="Vendedor">Vendedor
+                        </div>
+                    </div>
+                    <div class="user-interests">
+                        <h5>Categorías de interés</h5>
+                        <div class="interests-checkbox">
+                            <input type="checkbox" name="categoria" value="Electro">Electro
+                            <input type="checkbox" name="categoria" value="Moda">Moda
+                            <input type="checkbox" name="categoria" value="Hogar">Hogar
+                            <input type="checkbox" name="categoria" value="Jugueteria">Juguetería
+                            <input type="checkbox" name="categoria" value="Vida-sana">Vida sana
+                        </div>
+                    </div>
+                    <div class="user-photo">
+                        <h4>Foto de perfil</h4>  
+                        <div class="file-type-input">
+                            <input type="file" name="fotousuario" id="fotousuario" accept=".jpg" required>
+                        </div>
+                    </div>
+                    <div class="register-button">
+                        <input type="reset" name="reset" value="Borrar" id="boton">
+                        <input type="submit" name="submit" value="Enviar" id="boton">
                     </div>
                 </div>
-                <div class="user-interests">
-                    <h4>Categorías de interés</h4>
-                    <div class="interests-checkbox">
-                        <input type="checkbox" name="categoria" value="Electro">Electro
-                        <input type="checkbox" name="categoria" value="Moda">Moda
-                        <input type="checkbox" name="categoria" value="Hogar">Hogar
-                        <input type="checkbox" name="categoria" value="Jugueteria">Juguetería
-                        <input type="checkbox" name="categoria" value="Vida-sana">Vida sana
-                    </div>
-                </div>
-                <div class="user-photo">
-                    <h4>Foto de perfil</h4>  
-                    <div class="file-type-input">
-                        <input type="file" name="fotousuario" id="fotousuario" accept=".jpg" required> <br>
-                    </div>
-                </div>
-                <div class="register-button">
-                    <input type="reset" name="reset" value="Borrar" id="boton">
-                    <input type="submit" name="submit" value="Enviar" id="boton">
-                </div>
-            </div>
-        </form>
-    </main>
+            </form>
+        </div>
+        </main>
     <footer>
         <div class="footer-container">
             <article class="art-footer">
