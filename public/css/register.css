@@ -1,61 +1,103 @@
-    /*.register-form {                
-        background-color: white;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 90%;
-        max-width: 500px;
-        align-items: center;
-    }*/
+h4 {
+    font-size: 24px;
+    margin: 10px 0px;
+    font-weight: 500;
+}
 
-    h4 {
-        font-size: 24px;
-        margin: 10px 0px;
-        font-weight: 500;
-    }
+h5 {
+    font-size: 20px;
+    margin: 10px 0px;
+    font-weight: 500;
+}
 
-    h5 {
-        font-size: 20px;
-        margin: 10px 0px;
-        font-weight: 500;
-    }
-    
-    .login-form-container {
-        width: 90%;
-        max-width: 450px;
-        background-color: #ffffff;
-        padding: 20px;
-        margin: 30px auto;
-        text-align: center;
-        font-size: 18px;
-        border: solid #1259c3 2px;
-        border-radius: 10px;
-    }
+.register-form-container {
+    width: 90%;
+    max-width: 450px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 18px;
+    /* border: solid #1259c3 2px; */
+    border-radius: 10px;
+}
 
-    main form {
-        display: flex;
-        flex-direction: column;
-    }
+main form {
+    display: flex;
+    flex-direction: column;
+}
 
-    main form div {
-        display: flex;
-        flex-direction: column;
-        margin: 5px;
-    }
+main form div {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
 
-    main label {
-        margin: 5px
+main label {
+    margin: 5px
+}
+
+main input {
+    width: 80%;
+    margin: auto;
+    height: 30px;
+    border: solid 1px #1259c3;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #666;
+    text-align: center;
+}
+
+.perfilusuario input {
+    height: 20px;
+}
+
+.user-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.interests-checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.checkbox-radio input {
+    height: 15px;
+}
+
+.checkbox-radio label {
+    width: 33%;
+}
+
+.foto-usuario {
+    border: none;
+}
+
+.register-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.register-button input {
+    margin: 5px;
+    border-color: #1259c3;
+    background-color: #1259c3;
+    font-weight: bold;
+    color: white;
+}
+
+
+@media (min-width: 760px) {
+    div .burger-menu {
+        display: none;
     }
-    
-    main input {
-        width: 80%;
-        margin: auto;
-        height: 40px;
-        border: solid 2px #666;
-        border-radius: 10px;
-        font-size: 20px;
-        background-color: #ffffff;
-        color: #666;
-        text-align: center;
-    }
+}
+
+
+

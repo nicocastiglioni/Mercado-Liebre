@@ -13,13 +13,14 @@ h4 {
     margin: 30px auto;
     text-align: center;
     font-size: 18px;
-    border: solid #1259c3 2px;
+    /* border: solid #1259c3 2px; */
     border-radius: 10px;
 }
 
 main form {
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
 }
 
 main form div {
@@ -36,10 +37,31 @@ main input {
     width: 80%;
     margin: auto;
     height: 40px;
-    border: solid 2px #666;
+    border: solid 1px #1259c3;
     border-radius: 10px;
     font-size: 20px;
     background-color: #ffffff;
     color: #666;
+    text-align: center;
+}
+
+.submit-button {
+    align-items: center;
+}
+
+.submit-button input {
+    margin: 5px;
+    border-color: #1259c3;
+    background-color: #1259c3;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+@media (min-width: 760px) {
+    div .burger-menu {
+        display: none;
+    }
 }
 

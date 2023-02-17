@@ -56,7 +56,7 @@
         <div class="register-form-container">
             <form action="/" method="get">
                 <div class="register-form">
-                    <h4>Registro de Usuario</h4>
+                    <h4>Registrate</h4>
                     <div class="text-type-input">
                         <input type="text" name="nombre" id="nombre" placeholder="Nombre" required> 
                     </div>
@@ -85,29 +85,30 @@
                     <div class="user-profile">
                         <h5>Perfil de usuario</h5>
                         <div class="user-type">
-                            <input type="radio" name="perfildeusuario" value="Comprador" checked>Comprador
-                            <input type="radio" name="perfildeusuario" value="Vendedor">Vendedor
+                            <label class="perfilusuario"><input type="radio" name="perfildeusuario" value="Comprador" checked>Comprador</label>
+                            <label class="perfilusuario"><input type="radio" name="perfildeusuario" value="Vendedor">Vendedor</label>
+                            
                         </div>
                     </div>
                     <div class="user-interests">
-                        <h5>Categorías de interés</h5>
+                        <h5>Intereses</h5>
                         <div class="interests-checkbox">
-                            <input type="checkbox" name="categoria" value="Electro">Electro
-                            <input type="checkbox" name="categoria" value="Moda">Moda
-                            <input type="checkbox" name="categoria" value="Hogar">Hogar
-                            <input type="checkbox" name="categoria" value="Jugueteria">Juguetería
-                            <input type="checkbox" name="categoria" value="Vida-sana">Vida sana
+                            <label class="checkbox-radio"><input type="checkbox" name="interes" value="electro">Electro</label>
+                            <label class="checkbox-radio"><input type="checkbox" name="interes" value="moda">Moda</label>
+                            <label class="checkbox-radio"><input type="checkbox" name="interes" value="hogar">Hogar</label>
+                            <label class="checkbox-radio"><input type="checkbox" name="interes" value="jugueteria">Juguetería</label>
+                            <label class="checkbox-radio"><input type="checkbox" name="interes" value="vida sana">Vida sana</label>
                         </div>
                     </div>
                     <div class="user-photo">
-                        <h4>Foto de perfil</h4>  
+                        <h5>Foto de perfil</h4>  
                         <div class="file-type-input">
-                            <input type="file" name="fotousuario" id="fotousuario" accept=".jpg" required>
+                            <input class="foto-usuario" type="file" name="fotousuario" id="fotousuario" accept=".jpg" required>
                         </div>
                     </div>
                     <div class="register-button">
-                        <input type="reset" name="reset" value="Borrar" id="boton">
-                        <input type="submit" name="submit" value="Enviar" id="boton">
+                        <input class="reset-button" type="reset" name="reset" value="Borrar" id="boton">
+                        <input class="submit-button" type="submit" name="submit" value="Enviar" id="boton">
                     </div>
                 </div>
             </form>
